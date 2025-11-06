@@ -1,25 +1,78 @@
-body { 
+/* Body */
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    color: #333;
 }
-h1 { 
+
+/* Heading */
+h1 {
     color: teal;
+    text-align: center;
+    margin-bottom: 1em;
 }
+
+/* Form container */
+form {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Labels */
 label {
-    float: left;
-    width: 6em;
+    display: inline-block;
+    width: 100px;
     margin-bottom: 0.5em;
+    font-weight: bold;
 }
+
+/* Inputs */
 input[type="text"], input[type="email"] {
-    width: 15em;
-    margin-left: 0.5em;    
-    margin-bottom: 0.5em;
+    width: calc(100% - 120px);
+    padding: 0.5em;
+    margin-bottom: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
 }
+
+/* Input focus */
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: teal;
+    outline: none;
+}
+
+/* Form row */
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Clear floats (nếu dùng) */
 br {
     clear: both;
 }
+
+/* Submit button */
 #submit {
-    margin-left: 0.5em;
+    display: block;
+    margin: 1em auto 0;
+    padding: 0.6em 2em;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #006666;
 }
